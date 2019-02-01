@@ -1,0 +1,27 @@
+image: node:8
+cache:
+  paths:
+  - node_modules/
+stages:
+  - test
+  - build
+  - deploy
+build:
+  stage: test
+  script:
+   - npm install -g yarn
+   - yarn install
+  only:
+    - master
+build-docker-image:
+  stage: build
+  script:
+    - echo build stage
+  only:
+    - master
+deploy:
+  stage: deploy
+  script:
+    - echo deploy stage
+  only:
+    - master

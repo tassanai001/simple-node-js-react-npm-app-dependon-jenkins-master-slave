@@ -1,0 +1,6 @@
+authtoken: ULVodUYpT4Kps1zx8nP8_6i8GvKi8A9tmRL5L11JRo
+log: /Users/aycap/Labs/simple-node-js-react-npm-app/var/log/ngrok.log
+tunnels:
+  jenkins:
+    addr: 8080
+    proto: http
